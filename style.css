@@ -1,0 +1,163 @@
+
+body{
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    /* border: 2px dashed red; */
+}
+@media (max-width: 1000px) {
+    body {
+        overflow-x:scroll;
+    }
+}
+.container{
+    /* border: 2px solid red; */
+    height:60rem;
+    max-width: 100%;
+    margin: 0;
+    
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+}
+
+.side-bar{
+    color: white;
+    background-color: rgb(41, 89, 161);
+    /* border: 2px solid blue; */
+    width: 20%;
+    
+}
+.content-container{
+    /* border:2px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.heading{
+    /* border:2px solid yellow; */
+    box-shadow: 0px 3px 3px gray;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+.search-bar,.info{
+    display: flex;
+    
+    height:50%;
+    background-color: white;
+}
+#submit-button,#search-bar,#bell{
+    margin-left: 15px;
+    position: relative;
+    top: 10px;
+    height: 30px;
+}
+#submit-button{
+    width: 30px;
+    border-radius: 100%;
+}
+#search-bar{
+    border-radius: 30px;
+    width: 400px;
+}
+#bell{
+    left: 250px;
+}
+#Username{
+    position: relative;
+    left: 270px;
+    bottom:11px;
+}
+.sub-content{
+    /* border: 3px dashed orange; */
+    display: flex;
+}
+.announcements{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px dashed pink; */
+    width: 13rem;
+}
+.data{
+    height: 50%;
+    margin: 10px;
+    background-color: white;
+}
+.content{
+    /* border: 2px solid purple; */
+    height: 52rem;
+    display: grid;
+    grid-template-columns: repeat(2, 400px); /* Three columns with equal width */
+    grid-template-rows: repeat(3, 1fr); /* Two rows with a fixed height of 100px */
+    gap: 10px; /* Adjust the gap between grid items */
+    position: relative;
+}
+.grid-item{
+    border-radius: 10px;
+    background-color: white;
+    margin: 30px;
+    box-shadow: 0px 3px 3px gray;
+}
+.content::before {
+    content: 'Your Projects: ';
+    font-size: 20px;
+    color: white; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; /* Place pseudo-element behind grid items */
+    background-color: black; /* Adjust background color */
+  }
+
+  h5{
+    color: white;
+  }
+
+  ul{
+    list-style: none;
+    padding: 5px;
+    margin: 5;
+  }
+  li {
+    list-style: none;
+    padding: 10px; /* Adjust as needed */
+}
+
+li img {
+    vertical-align: middle;
+    margin-right: 5px; /* Optional: Add some space between the image and text */
+    background-color: white;
+    border-radius: 10%;
+    
+}
+
+h1 img{
+    margin-right: 2px;
+    vertical-align:text-top;
+    background-color: white;
+    border-radius: 10%;
+}
+#search-bar::placeholder{
+    position: relative;
+    left: 10px;
+}
+p {
+    font-size: 19px; /* Default font size */
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+p::first-line {
+    font-size: 12px; /* Different font size for the second line */
+     /* Optional: Add color to the second line */
+}
+#logo{
+    margin-left: 15px;
+    border-radius: 100%;
+    height: 60px;
+}
